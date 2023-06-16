@@ -58,14 +58,17 @@
         </div>
       </div>
 
-      <div id="btn" class="button col-12 self-end q-pt-xs-lg q-pl-xs-sm q-pl-sm-xl">
+      <div
+        id="btn"
+        class="button col-12 self-end q-pt-xs-lg q-pl-xs-sm q-pl-sm-xl"
+      >
         <q-btn
           :href="link"
           target="_blank"
           padding="xs md"
           outline
           color="primary"
-          :label="buttonList.button[receivedVariable]"
+          :label="buttonList.button[locale]"
           no-caps
         />
       </div>
@@ -117,25 +120,24 @@ export default defineComponent({
       type: Array,
       required: true,
     },
-    receivedVariable: {
+    locale: {
       type: String,
       required: true,
     },
   },
   mounted() {
     //this.moveRightElement();
-
     /**
      * Cette partie peut être enlevé et relayé au css avec du display flex en découpant le composant comme ça plûtot
      * en sortant le bouton de la div "#test"
-     * 
+     *
      * En général, dans un composant vu, il vaut mieux ne pas utiliser document.getElementById pour récupérer un composant mais une ref
      * Car dans ton cas tu instancis 2 fois le composant SitePorfolio et donc dans le DOM, tu les id en double
-     * 
+     *
      * <div ref="maDiv">
-     * 
+     *
      * Dans le js => this.$refs.maDiv    Equiv document.getElementById
-     * 
+     *
      *  __________________________________________
      * |  ___________________    ________________ |
      * | |                   |  |                ||
@@ -146,18 +148,14 @@ export default defineComponent({
      * | |_______________________________________||
      * |__________________________________________|
      */
-
-
     // let img = document.getElementById("img");
     // let btn = document.getElementById("btn");
     // let test = document.getElementById("test");
     // let group = document.getElementById("group");
-
     // console.log(window.innerWidth);
     // window.addEventListener("load", function () {
     //   window.dispatchEvent(new Event("resize"));
     // });
-
     // window.onresize = function () {
     //   if (window.innerWidth < 1024) {
     //     test.insertBefore(img, btn);

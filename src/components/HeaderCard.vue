@@ -167,21 +167,7 @@
               transform: translate(-50%, -45%);
             "
           ></div>
-          <!--
-          <Vue3Lottie
-            class="vue3-lottie"
-            :animationData="AstronautJSON"
-            :height="260"
-            :width="260"
-            :speed="0.25"
-            style="
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-            "
-          />
-        --></div>
+        </div>
       </div>
     </div>
 
@@ -195,22 +181,13 @@
         label="Portfolio"
         no-caps
       />
+
       <q-btn
         id="btn-talk"
         class="col-auto"
         padding="xs md"
         color="primary"
-        v-show="receivedVariable == 'FR'"
-        label="Me contacter"
-        no-caps
-      />
-      <q-btn
-        id="btn-talk"
-        class="col-auto"
-        padding="xs md"
-        color="primary"
-        v-show="receivedVariable == 'EN'"
-        label="Let's talk"
+        :label="buttonList.button[locale]"
         no-caps
       />
     </div>
@@ -243,6 +220,12 @@ export default {
   },
   setup() {
     const locale = inject("locale");
+    const buttonList = reactive({
+      button: {
+        FR: "Me contacter",
+        EN: "Let's talk",
+      },
+    });
     const linksList = reactive([
       {
         title: "Bonjour, je suis Florian",
@@ -305,6 +288,7 @@ export default {
     return {
       linksList,
       locale,
+      buttonList,
     };
   },
 };

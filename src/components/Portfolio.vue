@@ -45,7 +45,7 @@
 
   <div class="q-pa-xs-md q-pa-md-xl">
     <SitePortfolio
-      :receivedVariable="locale"
+      :locale="locale"
       v-for="(links, index) in linksList"
       :key="index"
       :title="links.title[locale]"
@@ -157,120 +157,12 @@ export default defineComponent({
     // Ajoute un événement de scroll sur la fenêtre
     window.addEventListener("load", () => {
       this.updateTranslate();
-      // Calcule la position actuelle de l'élément en pourcentage par rapport à la position de l'écran visible
-      // const visiblePercentage =
-      //   ((window.innerHeight - currentPosition) / window.innerHeight) * 100;
-      // monEvenement(visiblePercentage);
     });
 
     // Ajoute un événement de scroll sur la fenêtre
     this.scrollListener = window.addEventListener("scroll", () => {
       this.updateTranslate();
-      // Récupère la position actuelle de la fenêtre
-      // const currentScrollPosition = window.scrollY;
-      // Calcule la position actuelle de l'élément par rapport au scroll
-      // const currentPosition = elementPosition - currentScrollPosition;
-      // Calcule la position actuelle de l'élément en pourcentage par rapport à la position de l'écran visible
-      // const visiblePercentage =
-      // ((window.innerHeight - currentPosition) / window.innerHeight) * 100;
-
-      // Vérifie si la position actuelle de l'élément est dans la zone du milieu de l'écran
-      // if (visiblePercentage > 0) {
-      // L'élément se trouve au milieu de l'écran, déclenche l'événement
-      // monEvenement(visiblePercentage);
-      // }
     });
-
-    function monEvenement(visiblePercentage) {
-      // Code à exécuter lorsque l'élément est au milieu de l'écran
-      // const titleP = document.getElementById("p");
-      // const titleO = document.getElementById("o");
-      // const titleR = document.getElementById("r");
-      // const titleT = document.getElementById("t");
-      // const titleF = document.getElementById("f");
-      // const titleO2 = document.getElementById("o_2");
-      // const titleL = document.getElementById("l");
-      // const titleI = document.getElementById("i");
-      // const titleO3 = document.getElementById("o_3");
-      // console.log(visiblePercentage * 8);
-      // titleH2.style.opacity =
-      //   Math.exp(Math.sqrt(visiblePercentage)) / Math.exp(Math.sqrt(100));
-      // const Maxlimite = 800;
-      ///////////////////////////
-      ////////EFFET CROISEMENT OMBRES/////////////////////////////////////////
-      ///////////////////////////
-      // let shadowB = 0;
-      // shadowB = (titleH2.getBoundingClientRect().top - window.scrollY) / 50;
-      // let shadow2 = -shadowB;
-      // if (shadow2 > 0.2) {
-      //   shadow2 = 0.2;
-      // }
-      // if (shadowB < -0.2) {
-      //   shadowB = -0.2;
-      // }
-      // const widthOfScreen = window.innerWidth;
-      // let letterSpacing = (widthOfScreen * 0.001 * fontPlus) / 60;
-      // let letterSpacing = widthOfScreen * 0.025;
-      // if (widthOfScreen) {
-      // }
-      // console.log("S:" + shadowB);
-      // titleH2.style.letterSpacing = letterSpacing + "px";
-      // titleH2.style.letterSpacing = letterSpacing + "px";
-      // titleH2.style.textShadow =
-      //   shadowB * 5 +
-      //   "px " +
-      //   shadowB +
-      //   "px 0px white" +
-      //   "," +
-      //   shadow2 * 5 +
-      //   "px " +
-      //   shadow2 +
-      //   "px 0px grey";
-      // OPTION effet opacité
-      // titleH2.style.opacity = visiblePercentage / 20 - 1;
-      ////////////
-      ////////EFFET 3D/////////////////////////////////////////
-      ////////////
-      // let fontPlus = 600;
-      // let shadowB = 0;
-      // if (visiblePercentage < 50) {
-      //   console.log("<50");
-      //   // fontPlus = 400 + visiblePercentage * 4;
-      //   fontPlus = (visiblePercentage / 50) * (Maxlimite - 600) + 600;
-      // } else {
-      //   console.log("else");
-      //   fontPlus = ((100 - visiblePercentage) / 50) * (Maxlimite - 600) + 600;
-      // }
-      // shadowB = (titleH2.getBoundingClientRect().top - window.scrollY) / 50;
-      // let shadow2 = -shadowB;
-      // const widthOfScreen = window.innerWidth;
-      // // let letterSpacing = (widthOfScreen * 0.001 * fontPlus) / 60;
-      // let letterSpacing = widthOfScreen * 0.025;
-      // if (widthOfScreen) {
-      // }
-      // console.log(letterSpacing);
-      // titleH2.style.letterSpacing = letterSpacing + "px";
-      // // titleH2.style.letterSpacing = letterSpacing + "px";
-      // titleH2.style.textShadow =
-      //   shadowB / 4 +
-      //   "px " +
-      //   shadowB / 4 +
-      //   "px 0px white" +
-      //   "," +
-      //   shadow2 / 4 +
-      //   "px " +
-      //   shadow2 / 4 +
-      //   "px 0px grey";
-      // titleP.style.fontWeight = fontPlus;
-      // titleO.style.fontWeight = fontPlus;
-      // titleR.style.fontWeight = fontPlus;
-      // titleT.style.fontWeight = fontPlus;
-      // titleF.style.fontWeight = fontPlus;
-      // titleO2.style.fontWeight = fontPlus;
-      // titleL.style.fontWeight = fontPlus;
-      // titleI.style.fontWeight = fontPlus;
-      // titleO3.style.fontWeight = fontPlus;
-    }
   },
 });
 </script>

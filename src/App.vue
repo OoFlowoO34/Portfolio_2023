@@ -10,21 +10,21 @@ export default defineComponent({
   name: "App",
   data() {
     return {
-      locale: 'FR'
-    }
+      locale: "FR",
+    };
   },
   provide() {
     return {
       // On fournit la variable à tous les enfants
       // Ils l'a récupèreront avec un inject. voir NavCard.vue
-      locale: computed(() => this.locale)
-    }
+      locale: computed(() => this.locale),
+    };
   },
   methods: {
     setLocale(locale) {
-      this.locale = locale
-    }
-  }
+      this.locale = locale;
+    },
+  },
 });
 </script>
 
@@ -43,10 +43,10 @@ body {
 }
 ul {
   list-style-type: none;
-    padding: 0;
+  padding: 0;
   margin: 0;
 }
-a{
+a {
   text-decoration: none;
   color: black;
 }

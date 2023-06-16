@@ -11,17 +11,9 @@
 
       <q-space />
 
+      <!-- :model-value="locale" sur le qtabs va dire quel est l'onglet sélectioné
+      de base pour ne pas avoir a simuler un click -->
       <q-tabs id="languages" class="" shrink :model-value="locale">
-        <!-- <q-tab name="What-I-do" label="What I do" no-caps />  
-        
-        <q-tab round name="About" label="About" no-caps /> 
-
-
-
-
-        Working on FR & EN for next version
-        -->
-
         <q-tab
           v-for="(value, key) in languages"
           :key="key"
@@ -38,7 +30,7 @@
 </template>
 <script>
 import { reactive } from "vue";
-import { ref, getCurrentInstance, computed, inject } from "vue";
+import { getCurrentInstance, inject } from "vue";
 
 export default {
   components: {},
@@ -46,8 +38,8 @@ export default {
     return {};
   },
   setup() {
-    const instance = getCurrentInstance()
-    const locale = inject('locale')
+    const instance = getCurrentInstance();
+    const locale = inject("locale");
     const languages = reactive({
       FR: {
         FR: "Francais",
@@ -60,54 +52,25 @@ export default {
     });
 
     function changeLanguage(lang) {
-      instance.root.ctx.setLocale(lang)
+      instance.root.ctx.setLocale(lang);
 
       // Voir App.vue
 
       // Ici la la fonction changeLanguage va faire remonter le changement au premier Composant App.vue
-      
+
       // La réactivité se fait dans tous les composants ou tu demande la valeur
 
       // const locale = inject('locale') // FR ou EN
-
-      // if (lang == "Francais" || lang == "French") {
-      //   selectedLanguage.value = "FR";
-      //   console.log("selectedLanguage :" + selectedLanguage.value);
-      // } else {
-      //   selectedLanguage.value = "EN";
-      //   console.log("selectedLanguage :" + selectedLanguage.value);
-      // }
-      // return selectedLanguage;
     }
 
     return {
-      //selectedLanguage, : changeLanguage(),
       languages,
       locale,
       changeLanguage,
     };
   },
-  methods: {
-    // Plus besoin de faire remonter l'info
-
-    // passVariableToParent(lang) {
-    //   console.log("pass");
-    //   const variable = this.changeLanguage(lang);
-    //   this.$emit("variable-changed", variable);
-    // },
-  },
-  mounted() {
-    // :model-value="locale" sur le qtabs va dire quel est l'onglet sélectioné de base pour ne pas avoir a simuler un click
-
-    // Simule un clic sur l'onglet 'french'
-    // const frenchTab = document.querySelector("#languages");
-    // const firstLanguage = frenchTab.firstElementChild;
-    // const firstTab = firstLanguage.querySelector(".q-tab");
-    // console.log(firstTab);
-    // if (firstTab) {
-    //   firstTab.click();
-    // }
-  },
+  methods: {},
+  mounted() {},
 };
 </script>
 <style scoped>
