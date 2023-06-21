@@ -77,7 +77,7 @@ export default defineComponent({
         },
         text: {
           FR: "Projet réalisé pendant mon stage pour l'obtention de mon titre de Développeur Web et Web Mobile. <br><br> <strong>Fonctionnalités:</strong> <ul><li><span style='text-decoration: underline;'>Profil</span>: Inscription (vérification par e-mail), connexion, pseudo, mot de passe, photo, consultation de ses likes.</li> <li><span style='text-decoration: underline;'>Demandes</span>: Consultation des demandes des autres utilisateurs, ajout de demandes, consultation de ses demandes, edition de ses demandes, suppression de ses demandes.</li><li> <span style='text-decoration: underline;'>Messages</span>:  Envoie de messages à l'auteur d'une demande, réponse à un message reçu, consultation de sa messagerie, like d'autres utilisateurs.</li></ul><br><br><span style='text-decoration: underline;'><strong>Pour tester le site</strong></span> => Email: toto@toto.fr - Mdp: tototo",
-          EN: "This project is a linking platform to link with your neighboorhood, you can <strong>post</strong> and <strong>share</strong> share stuff, like other users and send <strong>messages</strong>.I made this project during my internship and got my DWWM degree presenting this website. The time to deliver beeing limited I used bootstrap for the style. I particulary enjoyed using Symfony 6, using the bundles and composants such as mailer, rate limiter. It also was really helpfull while dealing with unit tests.",
+          EN: "Project completed during my internship to obtain my title as a Web and Mobile Web Developer.<strong>Features:</strong><ul><li><span style='text-decoration: underline;'>Profile:</span> Registration (email verification), login, username, password, photo, viewing likes.</li><li><span style='text-decoration: underline;'>Requests:</span> Viewing requests from other users, adding requests, viewing own requests, editing own requests, deleting own requests.</li><li><span style='text-decoration: underline;'>Messages:</span> Sending messages to the author of a request, responding to received messages, viewing inbox, liking other users.</li></ul><span style='text-decoration: underline;'><strong>To test the site</strong></span> => Email: toto@toto.fr - Password: tototo",
         },
         caption: [
           "quasar.dev",
@@ -95,7 +95,7 @@ export default defineComponent({
         },
         text: {
           FR: "Projet personnel avec pour objectif de réaliser une nouvelle version de mon portfolio en Vue.js en utilisant Quasar.<br> Utilisation d'une font variable et animation lottie.",
-          EN: "This project is a personal portfolio...",
+          EN: "Personal project with the objective of creating a new version of my portfolio using Vue.js and Quasar.Utilization of a variable font and Lottie animations.",
         },
         caption: [
           "quasar.dev",
