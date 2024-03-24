@@ -67,7 +67,7 @@
         >
           <q-btn
             :href="cvUrl"
-            download="Portfolio-Florian-Batt.pdf"
+            download="CV-Florian-Batt.pdf"
             class="col-5"
             padding="md xl"
             color="primary"
@@ -82,7 +82,7 @@
 </template>
 
 <script>
-import cv from "../assets/CV_Florian_Batt_2023.pdf";
+import cv from "../assets/CV_Florian_Batt_2024.pdf";
 import portfolio from "../assets/portfolio.pdf";
 import { defineComponent, inject } from "vue";
 import { reactive } from "vue";

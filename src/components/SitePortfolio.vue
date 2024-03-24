@@ -62,15 +62,33 @@
         id="btn"
         class="button col-12 self-end q-pt-xs-lg q-pl-xs-sm q-pl-sm-xl"
       >
-        <q-btn
-          :href="link"
-          target="_blank"
-          padding="xs md"
-          outline
-          color="primary"
-          :label="buttonList.button[locale]"
-          no-caps
-        />
+        <div>
+          <!-- Condition if/else -->
+          <template v-if="link">
+            <q-btn
+              :href="link"
+              target="_blank"
+              padding="xs md"
+              outline
+              color="primary"
+              :label="buttonList.button[locale]"
+              no-caps
+            />
+          </template>
+          <template v-else>
+            <!-- Autre contenu à afficher lorsque la condition est fausse -->
+            <q-btn
+              disabled
+              :href="link"
+              target="_blank"
+              padding="xs md"
+              outline
+              color="grey"
+              label="Coming soon"
+              no-caps
+            />
+          </template>
+        </div>
       </div>
     </div>
   </q-layout>
