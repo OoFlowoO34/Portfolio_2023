@@ -94,7 +94,7 @@ export default defineComponent({
           EN: "Portfolio",
         },
         text: {
-          FR: "Projet personnel avec pour objectif de réaliser une nouvelle version de mon portfolio en Vue.js en utilisant Quasar.<br> Utilisation d'une font variable et animation lottie.",
+          FR: "Projet personnel avec pour objectif de réaliser une nouvelle version de mon portfolio en Vue.js en utilisant Quasar.<br> Sélection de la langue anglais/français dynamique.<br> Utilisation d'une font variable et animation lottie.",
           EN: "Personal project with the objective of creating a new version of my portfolio using Vue.js and Quasar.<br>Use of a variable font and Lottie animations.",
         },
         caption: [
@@ -105,6 +105,33 @@ export default defineComponent({
         icon: ["Vue-js", "Quasar", "JavaScript"],
         link: "https://portfolio.florian-dev.com/",
         image: "portfolio.png",
+      },
+      {
+        title: {
+          FR: "A'Rosa-je",
+          EN: "A'Rosa-je",
+        },
+        text: {
+          FR: "Développement d'une application mobile (flutter), de son back office (Vue.js) et de son API (Dot.net).<br>L'application permet à l'utilisateur de faire garder ses plantes par un autre.<br>Des botanistes professionnels peuvent fournir des conseils aux utilisateurs.<br>Projet réalisé lors de mes études à l'epsi en groupe de 4 personnes.<br><br><strong>Compétences:</strong> <br> Maquetter une application.<br> Développer des composants d’accès aux données.<br> Développer la partie Front-End d’une interface utilisateur.<br> Développer la partie Back-End d’une interface utilisateur.<br> Collaborer à la gestion d’un projet informatique et à l’organisation de l’environnement de développement<br> Concevoir une application<br> Construire une application organisée en couches<br> Développer une application mobile<br><ul> Préparer et exécuter le déploiement d’une application<li>Installer et configurer son environnement de travail en fonction du projet</li><li>Contribuer à la mise en production dans une démarche DevOps</li><li>Collaborer à la gestion d'un projet informatique et à l'organisation du développement</li></ul>",
+          EN: "Development of a mobile application (Flutter), its back office (Vue.js), and its API (Dot.net).<br>The application allows users to have their plants cared for by another person.<br>Professional botanists can provide advice to users.<br>Project carried out during my studies at epsi in a group of 4 people.<br><br><strong>Skills:</strong> <br>Mock-up an application.<br>Develop data access components.<br>Develop the Front-End part of a user interface.<br>Develop the Back-End part of a user interface.<br>Collaborate on the management of an IT project and the organization of the development environment<br>Design an application<br>Build an application organized in layers<br>Develop a mobile application<br><ul>Prepare and execute the deployment of an application<li>Install and configure your working environment according to the project</li><li>Contribute to production deployment in a DevOps approach</li><li>Collaborate on the management of an IT project and the organization of development</li></ul>",
+        },
+
+        caption: [
+          "quasar.dev",
+          "github.com/quasarframework",
+          "chat.quasar.dev",
+        ],
+        icon: [
+          "Vue-js",
+          "Quasar",
+          "TypeScript",
+          "Docker",
+          "Cypress",
+          "Flutter",
+          "Dotnet",
+        ],
+        link: null,
+        image: "Arosaje-BO.gif",
       },
     ]);
 
