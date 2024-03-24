@@ -160,7 +160,7 @@ export default defineComponent({
         elementPosition - window.scrollY - 260
       );
 
-      this.titleTranslate = [currentPosition / 5, currentPosition / 10];
+      this.titleTranslate = [currentPosition / 70, currentPosition / 100];
     },
   },
   data() {
@@ -198,7 +198,7 @@ h2 {
   animation-duration: 3s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  animation-name: anim-weiht;
+  animation-name: anim-weight;
 }
 @keyframes anim-weight {
   0% {
@@ -216,7 +216,7 @@ h2 {
   color: rgba(255, 255, 255);
   margin-top: 16px;
   margin-bottom: 8px;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.1em;
 }
 .shadow {
   color: rgba(0, 0, 0, 0.5);
