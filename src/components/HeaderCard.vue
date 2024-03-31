@@ -13,30 +13,7 @@
           id="title-header-fr"
           class="wave-word text-h5 q-mt-sm q-mb-xs text-weight-bold"
         >
-          <span>R</span>
-          <span>e</span>
-          <span>c</span>
-          <span>h</span>
-          <span>e</span>
-          <span>r</span>
-          <span>c</span>
-          <span>h</span>
-          <span>e</span>
-
-          <span>&nbsp;</span>
-          <span>a</span>
-          <span>l</span>
-          <span>t</span>
-          <span>e</span>
-          <span>r</span>
-          <span>n</span>
-          <span>a</span>
-          <span>n</span>
-          <span>c</span>
-          <span>e</span>
-
-          <span>&nbsp;</span>
-          <span id="as">d</span>
+          <span>D</span>
           <span>é</span>
           <span>v</span>
           <span>e</span>
@@ -52,13 +29,19 @@
           <span>e</span>
           <span>b</span>
 
+          <!-- <span id="as">&nbsp;</span> -->
           <span>&nbsp;</span>
-          <span>d</span>
-          <span>e</span>
-          <span>v</span>
-          <span>o</span>
-          <span>p</span>
-          <span>s</span>
+          <span>F</span>
+          <span>u</span>
+          <span>l</span>
+          <span>l</span>
+
+          <span>&nbsp;</span>
+          <span>S</span>
+          <span>t</span>
+          <span>a</span>
+          <span>c</span>
+          <span>k</span>
         </div>
 
         <!-- For English version -->
@@ -67,39 +50,25 @@
           id="title-header-en"
           class="wave-word text-h5 q-mt-sm q-mb-xs text-weight-bold"
         >
-          <span>L</span>
-          <span>o</span>
-          <span>o</span>
-          <span>k</span>
-          <span>i</span>
-          <span>n</span>
-          <span>g</span>
+          <span>F</span>
+          <span>u</span>
+          <span>l</span>
+          <span>l</span>
+
           <span>&nbsp;</span>
-          <span>f</span>
-          <span>o</span>
-          <span>r</span>
-          <span>&nbsp;</span>
-          <span>a</span>
-          <span>n</span>
-          <span>&nbsp;</span>
-          <span>i</span>
-          <span>n</span>
+          <span>S</span>
           <span>t</span>
-          <span>e</span>
-          <span>r</span>
-          <span>n</span>
-          <span>s</span>
-          <span>h</span>
-          <span>i</span>
-          <span>p</span>
-          <span>&nbsp;</span>
-          <span id="as">a</span>
-          <span>s</span>
+          <span>a</span>
+          <span>c</span>
+          <span>k</span>
+
           <span>&nbsp;</span>
           <span>W</span>
           <span>e</span>
           <span>b</span>
+
           <span>&nbsp;</span>
+          <!-- <span id="as">a</span> -->
           <span>d</span>
           <span>e</span>
           <span>v</span>
@@ -113,13 +82,38 @@
 
         <!--Looking for an intership as Web developer-->
 
-        <div v-show="locale == 'FR'" class="text-caption text-grey">
-          L'EPSI me soutient dans cette collaboration qui est pour moi une
-          oppotunité tant pour la formation que pour mon avenir professionnel.
+        <div v-show="locale == 'FR'" class="text-caption">
+          Dans mon portfolio vous trouverez mon CV téléchargeable ainsi que des
+          informations sur des projets que j’ai eu le plaisir de réaliser.
+          <br />
+          Dans le cas où vous auriez besoin d'informations complémentaires ou
+          simplement envie de discuter de notre passion pour le domaine,
+          n'hésitez pas à me contacter! 💬<br />
+          Mon gitlab et mon github:<br />
+          🦊
+          <a href="https://gitlab.com/FlorianGitLab"
+            >https://gitlab.com/FlorianGitLab</a
+          ><br />
+          🐱
+          <a href="https://github.com/OoFlowoO34"
+            >https://github.com/OoFlowoO34</a
+          >
         </div>
-        <div v-show="locale == 'EN'" class="text-caption text-grey">
-          EPSI supports me in this collaboration, which is an opportunity for
-          both my education and professional future.
+        <div v-show="locale == 'EN'" class="text-caption">
+          In my portfolio, you will find my downloadable CV as well as
+          information about projects I've had the pleasure of working on.
+          <br />
+          If you need further information or just want to discuss our passion
+          for web development, feel free to contact me! 💬<br />
+          My GitLab and GitHub:<br />
+          🦊
+          <a href="https://gitlab.com/FlorianGitLab"
+            >https://gitlab.com/FlorianGitLab</a
+          ><br />
+          🐱
+          <a href="https://github.com/OoFlowoO34"
+            >https://github.com/OoFlowoO34</a
+          >
         </div>
         <!--
         <div class="row q-pa-md" style="">
